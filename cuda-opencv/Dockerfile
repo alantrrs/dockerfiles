@@ -1,4 +1,4 @@
-FROM alantrrs/cuda-docker
+FROM nvidia/cuda:7.5-devel
 
 ## Install OpenCV 3.0 last stable commit
 RUN apt-get -y update

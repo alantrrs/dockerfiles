@@ -1,4 +1,4 @@
-FROM alantrrs/cuda-opencv
+FROM alantrrs/cuda-opencv:nvidia
 
 # Install Caffe dependencies
 RUN sudo apt-get update
