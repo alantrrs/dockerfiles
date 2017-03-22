@@ -24,8 +24,4 @@ RUN cmake -D CMAKE_BUILD_TYPE=RELEASE \
       ..
 RUN make -j7
 RUN make install
-
-# For some reason cv2.so doesn't get copied
-RUN cp /opencv/build/lib/cv2.so /usr/local/lib/python2.7/dist-packages/
-
 RUN ldconfig
