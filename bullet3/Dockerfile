@@ -10,4 +10,4 @@ RUN apt update && apt install -y git cmake ffmpeg pkg-config qtbase5-dev libqt5o
 RUN git clone https://github.com/bulletphysics/bullet3 /bullet3 && \
   bash ./build_cmake_pybullet_double.sh
 RUN cd build_cmake && make install
-
+RUN export PYTHONPATH=/bullet3/build_cmake/examples/pybullet
